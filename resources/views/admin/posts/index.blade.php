@@ -29,8 +29,8 @@
             <tr>
                 <td><span>{{ $post->id }}</span></td>
                 <td><p>{{ $post->title }}</p></td>
-                <td><p>{{ $post->created_at}}</p></td>
-                <td><p>{{ $post->updated_at}}</p></td>
+                <td><p>{{ $post->created_at->format('d/m/y')}}</p></td>
+                <td><p>{{ $post->updated_at->diffForHumans() }}</p></td>
                 <td>
                     <a class="btn btn-sm btn-success "href="{{ route('admin.posts.show', $post->id)}}">Show</a>
                 </td>
