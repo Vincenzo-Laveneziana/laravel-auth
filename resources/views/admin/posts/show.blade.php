@@ -23,10 +23,7 @@
             <td><p>{{ $post->created_at}}</p></td>
             <td><p>{{ $post->updated_at}}</p></td>
             <td>
-                <a class="btn btn-sm btn-success "href="">Show</a>
-            </td>
-            <td>
-                <a class="btn btn-sm btn-primary"href="">Edit</a>
+                <a class="btn btn-sm btn-primary"href="{{route('admin.posts.edit', $post->id)}}">Edit</a>
             </td>
             <td>
                 <a class="btn btn-sm btn-danger"href="">Delete</a>
